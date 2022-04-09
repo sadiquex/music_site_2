@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(media/bmw.jpg);
+    background-position: center;
+    position: relative;
+    
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    right: -40%;
+
+}
+.nav{
+    position: absolute;
+    top: 50px;
+    right: 20%;
+    border-radius: 10px;
+}
+.nav a{
+    color: azure;
+    font-size:10px;
+
+}
+.nav a:hover{
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 8px;
+    position: relative;
+    top: 2px;
+};
+.content{
+    width: 100%;
+    position: relative;
+    top: 50px;
+};
+.left-col{
+    position: absolute;
+    top: 40px;
+    margin-left: 6%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left-col{
+    margin-left: 6%;
+}
+.left-col h1{
+    font-size: 90px;
+    color: #fff;
+    line-height: 80px;
+    float: left;
+    font-family: montserrat;
+}
+.right-col{
+    float: right;
+    margin-right: 6%;
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.right-col #icon{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.right-col p{
+    font-size: 15px;
+}
+
+
+/* media queries */
+@media screen and (max-width: 414px){
+    .navbar ul li{
+        list-style: none;
+        display: block;
+        margin: 0 10px;
+        position: relative;
+        right: -40%;
+        line-height: 20px;
+        font-size: 30px;
+    }
+    .right-col{
+        float: right;
+        /* margin-right: 50%; */
+        position: absolute;
+        left: 150px;
+        top: 250px;
+        margin-top: 60px;
+        color: white;
+        display: inline;
+        align-items: center;
+    }
+    
+    
+
+}
